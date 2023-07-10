@@ -10,11 +10,7 @@
             VerticalOptions="Center">
             <Label   Text="Pagina de busqueda de imagenes de perros " HorizontalOptions="Center" FontSize="Title" TextColor="DarkTurquoise"/>
 
-            <Label
-                x:Name="BreedsLabel"
-                Text="Cargando espere....."
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <Label x:Name="BreedsLabel" Text="Cargando espere....." FontSize="18" HorizontalOptions="Center" />
 
             <StackLayout
                 x:Name="Layout"
@@ -22,10 +18,7 @@
                 VerticalOptions="Center">
             </StackLayout>
 
-            <Button
-                Text="Ramdom"
-                Clicked="Button_Clicked"
-                HorizontalOptions="Center" />
+            <Button Text="Ramdom" Clicked="Button_Clicked" HorizontalOptions="Center" />
 
             <Label   Text="Ingrese el nombre del perro a buscar" HorizontalOptions="Center" FontSize="Title" TextColor="DarkTurquoise"/>
 
