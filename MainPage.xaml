@@ -22,7 +22,7 @@
 
             <Label   Text="Ingrese el nombre del perro a buscar" HorizontalOptions="Center" FontSize="Title" TextColor="DarkTurquoise"/>
 
-            <Entry x:Name="BreedNameEntry" Placeholder="Ingrese el nombre del perro" HorizontalOptions="Center"/>
+            <Entry x:Name="BreedNameEntry" Placeholder="Nombre del perro" HorizontalOptions="Center"/>
             <Button Text="Buscar Perro" Clicked="SearchButton_Clicked" HorizontalOptions="Center"/>
             
         </VerticalStackLayout>
