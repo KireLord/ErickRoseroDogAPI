@@ -11,7 +11,6 @@ public partial class MainPage : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        // Realizar la solicitud HTTP a la API para obtener la lista de razas de perros
         HttpClient client = new HttpClient();
         HttpResponseMessage response = await client.GetAsync(apiUrl);
 
@@ -60,7 +59,6 @@ public partial class MainPage : ContentPage
 
         if (!string.IsNullOrEmpty(breedName))
         {
-            // Realizar la solicitud HTTP a la API para obtener la imagen de la raza de perro buscada
             string breedImageUrl = $"https://dog.ceo/api/breed/{breedName}/images/random";
             HttpClient client = new HttpClient();
             HttpResponseMessage imageResponse = await client.GetAsync(breedImageUrl);
@@ -87,11 +85,6 @@ public partial class MainPage : ContentPage
             }
         }
     }
-
-
-
-
-
     private List<string> ParseBreeds(string jsonResponse)
     {
         var json = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(jsonResponse);
